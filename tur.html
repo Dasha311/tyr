@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры в казахскую степь</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://gagaru.club/uploads/posts/2023-02/1675869637_gagaru-club-p-almati-krasivie-vidi-krasivo-3.png" alt="Логотип">
+        </div>
+        <nav>
+            <a href="#about" class="my-button">О туре</a>
+            <a href="#tours" class="my-button">Расписание туров</a>
+            <a href="#booking" class="my-button">Бронирование</a>
+            <a href="#location" class="my-button">Как нас найти</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="about-background">
+            <h2>О ТУРЕ</h2>
+            <p>Погрузитесь в первобытную казахскую степь, живите в юртах и готовьте еду на костре. Испытайте настоящую жизнь кочевников! Мы обещаем только незабываемые эмоции</p>
+            <a href="#booking" class="my-button">Бронирование</a>
+        </div>
+    </section>
+
+    <section id="tours">
+        <h2 class="section-title">РАСПИСАНИЕ ТУРОВ</h2>
+        <div class="tours-container">
+            <div class="tour">
+                <div class="tour-image">
+                    <img src="https://media.baamboozle.com/uploads/images/780240/1680780463_173593_url.jpeg" alt="Тур 1">
+                </div>
+                <div class="tour-info">
+                    <h3>1-дневный тур</h3>
+                    <p>Продолжительность: 1 день</p>
+                    <p>Описание тура: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                    <a href="#booking" class="my-button">Забронировать</a>
+                </div>
+            </div>
+        
+            <div class="tour">
+                <div class="tour-image">
+                    <img src="https://klike.net/uploads/posts/2022-09/1662794751_g-12.jpg" alt="Тур 3">
+                </div>
+                <div class="tour-info">
+                    <h3>3-дневный тур</h3>
+                    <p>Продолжительность: 3 дня</p>
+                    <p>Описание тура: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                    <a href="#booking" class="my-button">Забронировать</a>
+                </div>
+            </div>
+        
+            <div class="tour">
+                <div class="tour-image">
+                    <img src="https://static.tildacdn.com/tild3339-3163-4466-b033-316534666163/1d1747e06ce7f0bb169a.jpg" alt="Тур 5">
+                </div>
+                <div class="tour-info">
+                    <h3>5-дневный тур</h3>
+                    <p>Продолжительность: 5 дней</p>
+                    <p>Описание тура: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                    <a href="#booking" class="my-button">Забронировать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2 class="section-title">БРОНИРОВАНИЕ</h2>
+        <form id="booking-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tour">Выберите тур:</label>
+            <select id="tour" name="tour" required>
+                <option value="1-day">1-дневный тур</option>
+                <option value="3-day">3-дневный тур</option>
+                <option value="5-day">5-дневный тур</option>
+            </select>
+            <button type="submit" class="my-button">Отправить заявку</button>
+        </form>
+    </section>
+
+    <section id="map-section">
+        <h2 class="section-title">КАК НАС НАЙТИ</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10904.085637038475!2d76.88810386078843!3d43.20379917104641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836895257e39cb%3A0x28bb8b25d8c43156!2z0JDQu9C80LDRgtGLINCc0LXQvdC10LTQttC80LXQvdGCINCj0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2skz!4v1720632378414!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <form
+  action="https://formspree.io/f/manwnqww"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: #442d25;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.logo img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff; 
+    text-shadow: 1px 1px 2px #000; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -10px;
+    left: 0;
+    background-image: url('patterns/mountains.png');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background: #442d25;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#about {
+    background-image: url('https://i.pinimg.com/originals/b5/76/d3/b576d3e622a4c8bfd23c1c7641db2f17.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#about h2 {
+    background: linear-gradient(to right, #1a314c, #6b296e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px #000; 
+    font-size: 80px;
+    font-weight: 1800;
+}
+
+#about p {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-family: 'Times New Roman', serif;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #8B4513;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #A0522D;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a.my-button {
+    background: linear-gradient(to right, #1a314c, #6b296e);
+    background-color: #1a314c;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 15px 22px;
+    border: 5px solid #000;
+    border-radius: 42px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.my-button span {
+    margin-left: 22px;
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDI1IDE5IiBjbGFzcz0ibWVyY2FyaWVzLWFycm93LXJpZ2h0Ij48cG9seWxpbmUgcG9pbnRzPSIxNi41LDAuMyAxMC41LDkuNSAxNi41LDE4LjciLz48cG9seWxpbmUgcG9pbnRzPSIwLjUsMC4zIDYuNSw5LjUgMC41LDE4LjciLz48L3N2Zz4=);
+    background-size: cover;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff; 
+    text-shadow: 1px 1px 2px #000; 
+}
+
+.tours-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour {
+    flex: 1 1 30%;
+    margin: 15px;
+    background: #a89a9a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tour:hover {
+    transform: translateY(-10px);
+}
+
+.tour-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tour-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tour-info {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.tour-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.tour-info p {
+    font-size: 18px;
+    color: #fff;
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.tour-info a.my-button {
+    margin-top: 10px;
+}
+
+#map-section {
+    padding: 30px;
+    background: #2f1b15;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.map-container {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 18px;
+    }
+
+    #about p {
+        font-size: 30px;
+    }
+
+    .tour {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    #about p {
+        font-size: 24px;
+    }
+
+    .tour {
+        flex: 1 1 100%;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
